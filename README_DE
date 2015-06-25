@@ -1,0 +1,43 @@
+================================
+=== OJS DNB-URN-Plugin
+=== Version: 1.2
+=== Author: Božana Bokan <bozana.bokan@cedis.fu-berlin.de>
+    Center für Digitale Systeme (CeDiS), Freie Universität Berlin
+=== Last update: 15. Juni 2015  
+================================
+
+Über
+-----
+Das DNB-URN-Plug-In ermöglicht die Zuweisung von Uniform Resource Names nach den URN-Richtlinien der Deutschen Nationalbibliothek.
+Lesen Sie auch die Dokumentation: http://pkp.sfu.ca/wiki/index.php/URNPlugIn_Doku
+
+Das Plug-In ist Teil des Projekts "Funktionaler Ausbau von und Mehrwertdienste für ‚Open Journal Systems‘ (OJS)", das an der Freien Universität Berlin angesiedelt und durch die Deutsche Forschungsgemeinschaft (DFG) finanziert wird.
+Mehr zum Projekt: http://www.cedis.fu-berlin.de/ojs-de
+
+Lizenz
+-------
+Das Plug-In ist unter GNU General Public License v2 lizenziert. Sehen Sie die OJS-Datei docs/COPYING für mehr Informationen über die Lizenz.
+
+Systemanforderungen
+-------------------
+Die gleichen Anforderungen wie für OJS 2.4.6.
+
+Installation
+------------
+Um das Plug-In zu installieren:
+ - kopieren Sie die Plug-In-Datei tar.gz in Ihr Verzeichnis OJS/plugins/pubIds
+ - entpacken Sie das Plug-In in Ihr Verzeichnis plugins/pubIds:
+    $ tar xvzf urnDNB-1.2.tar.gz 
+ - aus Ihrem OJS-Verzeichnis führen Sie aus:
+    $ php tools/upgrade.php upgrade
+ - schalten Sie das Plug-In ein, indem Sie zu Startseite > Benutzer/in > Zeitschriftenverwaltung > Verwaltung der Plug-Ins > Plug-Ins für öffentliche Kennungen gehen und "Einschalten" unter "DNB-URN" wählen
+
+Kontakt/Support
+---------------
+Für Support, Fehlerbehebung oder Kommentare schicken Sie bitte eine E-Mail an die Autorin.
+
+Version History
+---------------
+1.0	- Initial Release
+1.1 - Support the overall OAI interface (.../index/oai?verb=...)
+1.2 - Exclude posibility, remove publisherID suffix option, larger prefix input field, references

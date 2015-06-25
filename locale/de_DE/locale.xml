@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * @file plugins/pubIds/urnDNB/locale/de_DE/locale.xml
+  *
+  * Author: Marco Tullney, Center for Digital Systems (CeDiS), Freie Universität Berlin
+  * Last update: June 15, 2015
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * DNB URN plugin localization strings for the de_DE (Deutsch (Deutschland)) locale.
+  -->
+ 
+<locale name="de_DE" full_name="Deutsch (Deutschland)">
+	<message key="plugins.pubIds.urnDNB.urns">DNB-URN</message>
+
+	<!-- plugin -->
+	<message key="plugins.pubIds.urnDNB.displayName">DNB-URN</message>
+	<message key="plugins.pubIds.urnDNB.description">Dieses Plug-In ermöglicht die Zuweisung von Uniform Resource Names nach den URN-Richtlinien der Deutschen Nationalbibliothek.</message>
+
+	<!-- URN manager options, setting -->
+	<message key="plugins.pubIds.urnDNB.manager.settings.description"><![CDATA[Laut URN-Richtlinien der Deutschen Nationalbibliothek dürfen URN nur an die Fahnen die archiviert werden zugewiesen werden, d.h. an PDF-Fahnen in der Artikelhauptsprache.<br />Bitte erledigen Sie die folgenden Setup-Schritte, damit Sie URN in OJS verwalten und benutzen können:]]></message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnSettings">DNB-URN-Einstellungen</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnPrefix">URN-Präfix</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnPrefix.description"><![CDATA[Der DNB-URN-Präfix ist der feste, niemals wechselnde Bestandteil des URN (z.B. "urn:nbn:de:0000-").]]></message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix">URN-Suffix</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.default">Die Standardmuster (%j.v%vi%i.%a.g%g) benutzen.</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.pattern">Verwenden Sie das unten angegebene Muster, um URN-Suffixe zu erzeugen. Nutzen Sie %j für die Initialen der Zeitschrift, %v für die Nummer des Jahrgangs, %i für die Nummer der Ausgabe, %Y für das Jahr, %a für die OJS-Artikel-ID, %g für die OJS-Fahnen-ID, %p für die Seitenzahl und %x für die "benutzerdefinierte Kennung" (muss in Schritt 4.3 der Zeitschrifteneinrichtung aktiviert werden).</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.patternExample">vol%viss%ipp%p würde z.B. einen URN-Suffix "vol3iss2pp230" erzeugen.</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.description">Ein URN-Suffix kann in beliebiger Form sein, muss aber eindeutig für jedes veröffentlichte Element sein.</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.customIdentifier">Für jedes veröffentlichte Element einen individuellen URN-Suffix unabhängig und verschieden von der "benutzerdefinierten Kennung" aus der vorherigen Option vergeben. Sie werden ein zusätzliches URN-Eingabefeld auf der Metadatenseite jedes Elements finden.</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.clearURNs">URN löschen</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.clearURNs.description">Wenn Sie Ihre URN-Konfiguration ändern, werden bereits zugewiesene URN nicht betroffen sein. Sobald die geänderte URN-Konfiguration gespeichert worden ist, nutzen Sie bitte diesen Knopf, um alle bestehenden URN zu löschen, so dass die neuen Einstellungen für bestehende Artikel gelten.</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.clearURNs.confirm">Sind Sie sicher, dass Sie alle existierenden URN löschen möchten?</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.namespace">Namensraum</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.namespace.choose">Auswählen</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.namespace.description">Der Namensraum für persistente Bezeichner wird für die Registrierung bei der Deutschen Nationalbibliothek benötigt.</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnResolver">Resolver-URL</message>
+
+	<!-- custom URN suffix for an object -->
+	<message key="plugins.pubIds.urnDNB.metadata">DNB-URN-Metadaten</message>
+	<message key="plugins.pubIds.urnDNB.urnSuffix">URN</message>
+	<message key="plugins.pubIds.urnDNB.urnSuffix.description">Benutzerdefinierter URN-Suffix für dieses Element.</message>
+	<message key="plugins.pubIds.urnDNB.calculateCheckNo">Prüfziffer berechnen</message>
+	<message key="plugins.pubIds.urnDNB.urnNotYetGenerated">Sie sehen eine Vorschau der URN, die eventuell unvollständig ist. Der URN ist noch nicht erzeugt worden. Wenn die Ausgabe erzeugt wird und die öffentliche Fahne-Seite aufgerufen wird, wird automatisch ein eindeutiger URN für dieses Fahne-Objekt erzeugt.</message>
+	<message key="plugins.pubIds.urnDNB.excludePubObject">Diese Fahne von der Zuweisung eines URN ausnehmen.</message>
+	<message key="plugins.pubIds.urnDNB.urnClear">URN entfernen</message>
+	<message key="plugins.pubIds.urnDNB.urnClear.description">Wählen Sie diese Box, um den existierenden URN für diese Fahne zu löschen.</message>
+
+	<!-- consider URNs at other places in the system -->
+	<message key="plugins.pubIds.urnDNB.rt.metadata.urn">Uniform Resource Name</message>
+
+	<!-- errors -->
+	<message key="plugins.pubIds.urnDNB.manager.settings.form.urnPrefixRequired">Bitte geben Sie den URN-Präfix ein.</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.form.urnPrefixPattern"><![CDATA[Der URN-Präfix muss in der Form "urn:"&lt;NID&gt;":"&lt;NSS&gt; angegeben werden.]]></message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.form.urnGalleySuffixPatternRequired">Bitte geben Sie das URN-Suffix-Muster ein.</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.form.namespaceRequired">Bitte wählen Sie einen Namensraum.</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.form.urnResolverRequired">Bitte geben Sie die Adresse des Resolvers ein.</message>
+
+	<message key="plugins.pubIds.urnDNB.form.customIdentifierNotUnique">Der angegebene URN-Suffix wird bereits für ein anderes veröffentlichtes Element benutzt. Bitte vergeben Sie einen eindeutigen URN-Suffix für jedes Element.</message>
+	<message key="plugins.pubIds.urnDNB.form.checkNoRequired">Die Prüfziffer fehlt.</message>
+
+</locale>

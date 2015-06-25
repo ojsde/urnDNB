@@ -1,0 +1,43 @@
+================================
+=== OJS DNB URN Plugin
+=== Version: 1.2
+=== Author: Božana Bokan <bozana.bokan@cedis.fu-berlin.de>
+    Center for Digital Systems (CeDiS), Freie Universität Berlin
+=== Last update: June 15, 2015  
+================================
+
+About
+-----
+The DNB URN plugin enables the assignment of the Uniform Resource Names according to the policies of the Deutsche Nationalbibliothek.
+See the documentation in German: http://pkp.sfu.ca/wiki/index.php/URNPlugIn_Doku
+
+The plugin is a part of the project "Functional extensions and value added services for OJS" located at the Freie Universität Berlin and founded by the Deutsche Forschungsgemeinschaft (DFG).
+More about the project: http://www.cedis.fu-berlin.de/ojs-de
+
+License
+-------
+This plugin is licensed under the GNU General Public License v2. See the OJS file docs/COPYING for the complete terms of this license.
+
+System Requirements
+-------------------
+Same requirements as the OJS 2.4.6 core.
+
+Installation
+------------
+To install the plugin either:
+ - copy the plugin tar.gz file to your OJS/plugins/pubIds directory
+ - to unzip the plugin inside the plugins/pubIds directory:
+    $ tar xvzf urnDNB-1.2.tar.gz 
+ - from your OJS directory execute:
+    $ php tools/upgrade.php upgrade
+ - enable the plugin by going to: Home > User > Journal Management > Plugin Management > Public Identifier Plugins and selecting "ENABLE" under "DNB URN"
+
+Contact/Support
+---------------
+Please email the author for support, bugfixes, or comments.
+
+Version History
+---------------
+1.0	- Initial Release
+1.1 - Support the overall OAI interface (.../index/oai?verb=...)
+1.2 - Exclude posibility, remove publisherID suffix option, larger prefix input field, references
