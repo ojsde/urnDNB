@@ -2,10 +2,10 @@
 <!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
 
 <!--
-  * @file plugins/pubIds/urnDNB/locale/en_US/locale.xml
+  * @file locale/en_US/locale.xml
   *
   * Author: Božana Bokan, Center for Digital Systems (CeDiS), Freie Universität Berlin
-  * Last update: June 15, 2015
+  * Last update: September 25, 2015
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * DNB URN plugin localization strings

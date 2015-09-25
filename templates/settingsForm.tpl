@@ -1,8 +1,8 @@
 {**
- * plugins/pubIds/urnDNB/templates/settingsForm.tpl
+ * templates/settingsForm.tpl
  *
  * Author: Božana Bokan, Center for Digital Systems (CeDiS), Freie Universität Berlin
- * Last update: June 15, 2015
+ * Last update: September 25, 2015
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * DNB URN plugin settings

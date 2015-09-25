@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @file plugins/pubIds/urnDNB/URNDNBSettingsForm.inc.php
+ * @file classes/form/URNDNBSettingsForm.inc.php
  *
  * Author: Božana Bokan, Center for Digital Systems (CeDiS), Freie Universität Berlin
- * Last update: September 26, 2012
+ * Last update: September 25, 2015
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @class URNDNBSettingsForm
+ * @package plugins.pubIds.urnDNB
  * @ingroup plugins_pubIds_urnDNB
  *
  * @brief Form for journal managers to setup DNB URN plugin

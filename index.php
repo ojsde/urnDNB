@@ -1,22 +1,19 @@
 <?php
 
 /**
- * @defgroup plugins_pubIds_urnDNB
- */
-
-/**
- * @file plugins/pubIds/urnDNB/index.php
+ * @file index.php
  *
  * Author: Božana Bokan, Center for Digital Systems (CeDiS), Freie Universität Berlin
- * Last update: September 26, 2012
+ * Last update: September 25, 2015
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
- * @ingroup plugins_pubIds_urnDNB
+ * @package plugins.pubIds.urnDNB
+ *
  * @brief Wrapper for DNB URN plugin.
  *
  */
-require_once('URNDNBPubIdPlugin.inc.php');
 
+require_once('URNDNBPubIdPlugin.inc.php');
 return new URNDNBPubIdPlugin();
 
 ?>

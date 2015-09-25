@@ -2,10 +2,10 @@
 <!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
 
 <!--
-  * plugins/pubIds/urnDNB/version.xml
+  * version.xml
   *
   * Author: Božana Bokan, Center for Digital Systems (CeDiS), Freie Universität Berlin
-  * Last update: June 15, 2015  
+  * Last update: September 25, 2015  
   * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
   *
   * Plugin version information.

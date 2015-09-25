@@ -1,8 +1,8 @@
 {**
- * plugins/pubIds/urnDNB/templates/urnSuffixEdit.tpl
+ * templates/urnSuffixEdit.tpl
  *
  * Author: Božana Bokan, Center for Digital Systems (CeDiS), Freie Universität Berlin
- * Last update: March 27, 2013
+ * Last update: September 25, 2015
  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
  *
  * Edit custom DNB URN suffix for a galley object
