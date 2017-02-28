@@ -25,7 +25,19 @@
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnPrefix.description"><![CDATA[The DNB URN prefix is the fix, never changing part of the URN (e.g. "urn:nbn:de:0000-").]]></message>
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix">URN Suffix</message>
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.default">Use the default pattern %j.v%vi%i.%a.g%g.</message>
-	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.pattern">Use the pattern entered below to generate URN suffixes. Use %j for journal initials, %v for the volume number, %i for the issue number, %Y for the year, %a for the OJS article ID, %g for the OJS galley ID and %p for the page number and %x for "Custom Identifier" (must be enabled in Setup 4.3).</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.pattern">
+		<![CDATA[Use the pattern entered below to generate URN suffixes. Use <ul>
+			<li>%j for journal initials</li> 
+			<li>%v for the volume number</li> 
+			<li>%i for the issue number</li>
+			<li>%Y for the year</li>
+			<li>%a for the OJS article ID</li>
+			<li>%g for the OJS galley ID</li>
+			<li>%p for the page number</li>
+			<li>%x for "Custom Identifier" (must be enabled in Setup 4.3).</li>
+			<li>%P for santized version of page string</li>
+		<ul>]]>
+	</message>
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.patternExample">For example, vol%viss%ipp%p could create the URN suffix "vol3iss2pp230".</message>
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.description">A URN suffix can take any form, but must be unique for each published item.</message>
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.customIdentifier">Enter an individual URN suffix for each published item independent and different from the "Custom Identifier" mentioned in the previous option. You'll find an additional URN input field on each item's metadata page.</message>

@@ -43,7 +43,7 @@
 					<td rowspan="2" width="10%" class="label">{fieldLabel name="urnDNBSuffix" key="plugins.pubIds.urnDNB.urnSuffix"}</td>
 					<td rowspan="2" width="10%" align="right">{$urnPrefix|escape}</td>
 					<td width="80%" class="value"><input type="text" class="textField" name="urnDNBSuffix" id="urnDNBSuffix" value="{$urnDNBSuffix|escape}" size="20" maxlength="20" />
-					<input type="button" name="urnDNBCheckNo" value="{translate key="plugins.pubIds.urnDNB.calculateCheckNo"}" class="button" onClick="javascript:calculateCheckNo('{$urnPrefix|escape}')"><script src="{$baseUrl}/plugins/pubIds/urnDNB/js/checkNumber.js" type="text/javascript"></script></td>
+					<input type="button" name="urnDNBCheckNo" value="{translate key="plugins.pubIds.urnDNB.calculateCheckNo"}" class="button" onClick="javascript:calculateCheckNo('{$urnPrefix|escape}')"><script src="{$baseUrl}/plugins/pubIds/urnDNB-wholetthedogsout/js/checkNumber.js" type="text/javascript"></script></td>
 				</tr>
 				<tr valign="top">
 					<td colspan="3"><span class="instruct">{translate key="plugins.pubIds.urnDNB.urnSuffix.description"}</span></td>

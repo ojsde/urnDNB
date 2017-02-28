@@ -139,6 +139,7 @@ class URNDNBPubIdPlugin extends PubIdPlugin {
 					$suffixPattern = String::regexp_replace('/%a/', $article->getId(), $suffixPattern);
 					// %p - page number
 					$suffixPattern = String::regexp_replace('/%p/', $article->getPages(), $suffixPattern);
+					$suffixPattern = String::regexp_replace('/%P/', $this->_sanitizePages($article->getPages()), $suffixPattern);
 					// %g - galley id
 					$suffixPattern = String::regexp_replace('/%g/', $galley->getId(), $suffixPattern);
 
@@ -294,6 +295,21 @@ class URNDNBPubIdPlugin extends PubIdPlugin {
 	    $quotString = (string)$quotRound;
 
 	    return $quotString[strlen($quotString)-1];
+	}
+	
+	
+	/**
+	 * Since pages is just a string it can be something like "pp 235 to 159" or use special
+	 * characters like "–" (!= "-") wich are not allowed in URNs. So we sanitize the string.  
+	 * @param <string> $str
+	 * @return <string>
+	 */
+	private function _sanitizePages($str) {
+		$str = trim($str);
+		$str = preg_replace('#[^\d]+#', '-', $str); // replace all groups of non-digits by '-'
+		$str = (substr($str, 0, 1) == '-') ? substr($str, 1) : $str; // remove frist '-' if present
+		$str = (substr($str, -1, 1) == '-') ? substr($str, 0, strlen($str) -1) : $str; // remove last '-' if present
+		return $str;
 	}
 
 }

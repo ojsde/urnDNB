@@ -25,7 +25,19 @@
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnPrefix.description"><![CDATA[Der DNB-URN-Präfix ist der feste, niemals wechselnde Bestandteil des URN (z.B. "urn:nbn:de:0000-").]]></message>
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix">URN-Suffix</message>
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.default">Die Standardmuster (%j.v%vi%i.%a.g%g) benutzen.</message>
-	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.pattern">Verwenden Sie das unten angegebene Muster, um URN-Suffixe zu erzeugen. Nutzen Sie %j für die Initialen der Zeitschrift, %v für die Nummer des Jahrgangs, %i für die Nummer der Ausgabe, %Y für das Jahr, %a für die OJS-Artikel-ID, %g für die OJS-Fahnen-ID, %p für die Seitenzahl und %x für die "benutzerdefinierte Kennung" (muss in Schritt 4.3 der Zeitschrifteneinrichtung aktiviert werden).</message>
+	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.pattern">
+		<![CDATA[Verwenden Sie<ul>
+			<li>%j für die Initialen der Zeitschrift</li> 
+			<li>%v für die Nummer des Jahrgangs</li> 
+			<li>%i für die Nummer der Ausgabe</li>
+			<li>%Y für das Jahr</li>
+			<li>%a für die OJS-Artikel-ID</li>
+			<li>%g für die OJS-Fahnen-ID</li>
+			<li>%p für die Seitenzahl</li>
+			<li>%P für die (um Sonderzeichen) bereinigte Seitenzahl</li>
+			<li>für die "benutzerdefinierte Kennung" (muss in Schritt 4.3 der Zeitschrifteneinrichtung aktiviert werden).</li>
+		</ul>]]>
+	</message>
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.patternExample">vol%viss%ipp%p würde z.B. einen URN-Suffix "vol3iss2pp230" erzeugen.</message>
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.description">Ein URN-Suffix kann in beliebiger Form sein, muss aber eindeutig für jedes veröffentlichte Element sein.</message>
 	<message key="plugins.pubIds.urnDNB.manager.settings.urnSuffix.customIdentifier">Für jedes veröffentlichte Element einen individuellen URN-Suffix unabhängig und verschieden von der "benutzerdefinierten Kennung" aus der vorherigen Option vergeben. Sie werden ein zusätzliches URN-Eingabefeld auf der Metadatenseite jedes Elements finden.</message>
